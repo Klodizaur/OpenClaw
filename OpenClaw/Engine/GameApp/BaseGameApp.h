@@ -36,7 +36,14 @@ struct GameOptions
         musicVolume = 50; // In percents
         soundOn = true;
         musicOn = true;
+
+#ifdef _WIN32
         midiRpcServerPath = "MidiProc.exe";
+#elif defined(__APPLE__)
+        midiRpcServerPath = "MidiProc";  // Adjust to the macOS equivalent if needed
+#else
+        midiRpcServerPath = "";
+#endif
 
         fontNames.push_back("clacon.ttf");
         consoleFontName = "clacon.ttf";
@@ -47,7 +54,12 @@ struct GameOptions
         resourceCacheSize = 50;
         tempDir = ".";
         savesFile = "SAVES.XML";
-        userDirectory = "";
+
+#ifdef __APPLE__
+        userDirectory = SDL_GetPrefPath("YourCompanyName", "OpenClaw");
+#else
+        userDirectory = "~/.config/openclaw/";
+#endif
 
         startupCommandsFile = "startup_commands.txt";
     }
@@ -90,7 +102,6 @@ struct GameOptions
     unsigned resourceCacheSize;
     std::string tempDir;
     std::string savesFile;
-    // For LINUX ONLY - this is generally ~/.config/openclaw/
     std::string userDirectory;
 
     // Console config

@@ -6,6 +6,8 @@
 
 #ifdef ANDROID
 #include <jni.h>
+#elif defined(__APPLE__)
+#include <SDL2/SDL.h>
 #endif
 
 ClawGameApp testApp;
