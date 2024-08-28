@@ -1,4 +1,4 @@
-#### The [original repo](https://github.com/pjasicek/OpenClaw) looks to be abandoned with last update approx. 6 years ago, so I decided to fork it anyway and try to make it work on macOS. Because I like old games. Feel free to contribute. ~ [@Klodizaur](https://github.com/Klodizaur)
+#### The [original repo](https://github.com/pjasicek/OpenClaw) looks to be abandoned with last update approx. 2 years ago, so I decided to fork it anyway and try to make it work on macOS. Because I like old games. Feel free to contribute. ~ [@Klodizaur](https://github.com/Klodizaur)
 
 ---
 Original description:
