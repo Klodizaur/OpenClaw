@@ -1,4 +1,9 @@
-# OpenClaw - Captain Claw (1997) reimplementation
+#### The [original repo](https://github.com/pjasicek/OpenClaw) looks to be abandoned with last update approx. 6 years ago, so I decided to fork it anyway and try to make it work on macOS. Because I like old games. Feel free to contribute. ~ [@Klodizaur](https://github.com/Klodizaur)
+
+---
+Original description:
+
+## OpenClaw - Captain Claw (1997) reimplementation
 
  - This project is a multiplatform C++ reimplementation of original Captain Claw (1997) platformer game
  - Whole codebase was written from scratch
